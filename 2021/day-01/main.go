@@ -68,5 +68,5 @@ func main() {
 	// n := 3
 	sums = windowSum(lines, 3)
 	increases = countIncreases(sums)
-	fmt.Printf("Part 1: %d\n", increases)
+	fmt.Printf("Part 2: %d\n", increases)
 }
