@@ -13,7 +13,7 @@ NUMBERS = [
 ]
 
 
-def first_digit(line: list[str], reverse=False) -> str | None:
+def first_digit(line: str, reverse=False) -> str | None:
     line_length = len(line)
     window_line = line if not reverse else line[::-1]
     for i in range(len(window_line)):
@@ -26,7 +26,7 @@ def first_digit(line: list[str], reverse=False) -> str | None:
             if i + number_length > line_length:
                 continue
 
-            candidate_str = "".join(window_line[i : i + number_length])
+            candidate_str = window_line[i : i + number_length]
             if reverse:
                 candidate_str = candidate_str[::-1]
 
