@@ -46,7 +46,7 @@ def get_topological_order(
             if in_degree[neighbour] == 0:
                 queue.append(neighbour)
 
-    # cannot sort because of cycle
+    # cycle!
     if len(sorted_order) != len(pages):
         return None
 
